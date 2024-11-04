@@ -3,10 +3,11 @@
     "OrganizationCode": "abstract",
     "DictionaryCode": "BuildingSpaceActivityClassification",
     "DictionaryName": "Building Space and Activity Classification System",
-    "DictionaryVersion": "1.0.2",
+    "DictionaryVersion": "1.0.3",
     "LanguageIsoCode": "EN",
     "LanguageOnly": false,
     "UseOwnUri": false,
+    "MoreInfoUrl": "https://github.com/simondilhas/Building-Space-and-Activity-Classification-System",
     "DictionaryUri": "",
     "License": "CC BY 4.0",
     "LicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -42,6 +43,26 @@
             "RelatedIfcEntityNamesList": ["IfcSpace"],
             "Status": "Active",
             "ParentClassCode": "M"
+        },
+        {
+            "Code": "M-WRK-KNW",
+            "Name": "Knowledge Work Spaces",
+            "ClassType": "Class",
+            "Definition": "Spaces for intellectual and information-based work",
+            "Description": "Spaces designed for cognitive tasks, analysis, design, research, and collaborative intellectual work, including offices, meeting rooms, and creative studios",
+            "RelatedIfcEntityNamesList": ["IfcSpace"],
+            "Status": "Active",
+            "ParentClassCode": "M-WRK"
+        },
+        {
+            "Code": "M-WRK-PRD",
+            "Name": "Production Work Spaces",
+            "ClassType": "Class",
+            "Definition": "Spaces for physical production and manufacturing activities",
+            "Description": "Spaces designed for manufacturing, assembly, fabrication, maintenance, and other hands-on work activities",
+            "RelatedIfcEntityNamesList": ["IfcSpace"],
+            "Status": "Active",
+            "ParentClassCode": "M-WRK"
         },
         {
             "Code": "M-LRN",
@@ -98,10 +119,30 @@
             "Name": "Support Circulation Spaces",
             "ClassType": "Class",
             "Definition": "Auxiliary circulation spaces",
-            "Description": "Service corridors, fire exits, and other circulation spaces not part of main activities",
+            "Description": "Main circulation spaces, Corridors, fire exits, and other circulation spaces not part of main activities",
             "RelatedIfcEntityNamesList": ["IfcSpace"],
             "Status": "Active",
             "ParentClassCode": "S"
+        },
+        {
+            "Code": "S-CIR-HOR",
+            "Name": "Horizontal Circulation",
+            "ClassType": "Class",
+            "Definition": "Spaces for horizontal movement",
+            "Description": "Including corridors, hallways, bridges, connecting passages, and emergency exit routes",
+            "RelatedIfcEntityNamesList": ["IfcSpace"],
+            "Status": "Active",
+            "ParentClassCode": "S-CIR"
+        },
+        {
+            "Code": "S-CIR-VRT",
+            "Name": "Vertical Circulation",
+            "ClassType": "Class",
+            "Definition": "Spaces for vertical movement",
+            "Description": "Including staircases, elevator lobbies, escalator spaces, and ramps",
+            "RelatedIfcEntityNamesList": ["IfcSpace"],
+            "Status": "Active",
+            "ParentClassCode": "S-CIR"
         },
         {
             "Code": "S-TEC",
